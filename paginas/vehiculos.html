@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css.map">
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" href="../img/icono.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,43 +16,36 @@
         <title>Transporte JAMAX</title>
     </head>
 <body>
-
     <header>
+        <nav class="navbar navbar-expand-lg bg-opacity-10">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="/img/logo.png" alt="Logo" class="img-fluid logo_2"></a>
 
-        <section class="hero">
-            <div class="hero_1">
-                <a href="index.html"><img class="logo_2" src="../img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html"><img class="redes_img" src="/img/navegacion/inicio.png" alt="home">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/paginas/nosotros.html"><img class="redes_img" src="/img/navegacion/equipo.png" alt="sobrenosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/paginas/choferes.html"><img class="redes_img" src="/img/navegacion/choferes.png" alt="choferes">Choferes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/paginas/vehiculos.html"><img class="redes_img" src="/img/navegacion/autos.png" alt="auto">Vehiculos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/paginas/contacto.html"><img class="redes_img" src="/img/navegacion/contacto.png" alt="auto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        
-        <section>
-            <nav>
-    
-                <ul class="navegacion">
-                    <li class="ref">
-                        <a href="../index.html"> <img class="redes_img" src="../img/navegacion/inicio.png" alt="home"> Inicio</a>
-                    </li>
-    
-                    <li class="ref">
-                        <a href="/paginas/nosotros.html"> <img class="redes_img" src="../img/navegacion/equipo.png" alt="sobrenosotros"> Nosotros</a>
-                    </li>
-    
-                    <li class="ref">
-                        <a href="/paginas/choferes.html"> <img class="redes_img" src="../img/navegacion/choferes.png" alt="choferes"> Choferes</a>
-                    </li>
-
-                    <li class="ref">
-                        <a href="/paginas/vehiculos.html"><img class="redes_img" src="../img/navegacion/autos.png" alt="auto">Vehiculos</a>
-                    </li>
-    
-                    <li class="ref">
-                        <a href="/paginas/contacto.html"> <img class="redes_img" src="../img/navegacion/contacto.png" alt="contac"> Contactanos</a>
-                    </li>
-                </ul>
-    
-            </nav>
-        </section>
-            
+        </nav>
     </header>
 
     <main>
@@ -176,5 +171,6 @@
 
     </footer>
     
-</body>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js.map"></script>
 </html>
