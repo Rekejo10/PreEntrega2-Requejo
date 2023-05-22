@@ -13,10 +13,8 @@
 
 ul{
     list-style: none;
-}
-
-li{
-    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -24,7 +22,7 @@ html{
     font-size: 20px;
 }
 
-main{
+body{
     background-color: var(--primario);
     color: white;
 }
@@ -55,10 +53,9 @@ nav{
     background-image:url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: top;
     max-width: 100%;
     height: 60vh;
-    margin-top: 90px;
 }
 
 .logo_2 {
@@ -83,17 +80,11 @@ nav{
     .hero{
         max-width: 100%;
         height: 250px;
-        background-position: top;
-        margin: auto;
     }
 
     .logo_2 {
         width: 100px;
         height: 50px;
-    }
-
-    .ref{
-        margin: 2px 5px;
     }
 
     .sub_1{
@@ -138,10 +129,6 @@ nav{
 /** Media Querry Intro Nosotros **/
 
 @media (max-width:768px) {
-    h1{
-        font-size: 40px;
-        margin: 20px 20px;
-    }
 
     .intro_1{
         display: flex;
@@ -243,40 +230,32 @@ nav{
 }
 
 .pie{
-    display: flex;
-    justify-content: space-evenly;
     background-color: var(--secundario);
     padding-top: 20px;
+    color: white;
+}
+
+.pie h3{
+    color:var(--tercero)
 }
 
 .redes_1{
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    margin-left: 30px;
+    justify-content: center;
 }
 
-.redes_2{
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    
+.horario{
+    text-align: center;
+}
+
+.redes_lista{
+    line-height: 33px;
 }
 
 .redes_img{
     width: 30px;
     height: 30px;
-    position: relative;
-    top: 5px;
-    right: 2px;
-}
-
-.redes_titulo {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 iframe{
@@ -286,52 +265,13 @@ iframe{
     border-radius: 10px;
 }
 
-.contacto_2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 150px;
-}
-
-.horarios p{
-    color: white;
-}
-
-
-.horario_1{
-    margin-top: 10px;
-}
-
-.pie h3{
-    color: var(--tercero);
-    margin-bottom: 10px;
-}
 
 /** Media Querry Footer**/
 
 @media (max-width:768px) {
-    .pie{
-        padding-top: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:1fr 1fr;
-        grid-template-areas: 
-        "redes contacto"
-        "ubicacion horarios";
-        justify-items: center;
-    }
 
-    .redes{
-        grid-area: redes;
-    }
-
-    .contacto{
-        grid-area: contacto;
-    }
-
-    .ubicacion{
-        grid-area: ubicacion;
-        align-self: start;
+    footer{
+        font-size: 10px;
     }
 
     iframe{
@@ -339,46 +279,43 @@ iframe{
         height: 100px;
         margin-bottom: 20px;
     }
-
-    .horarios{
-        grid-area: horarios;
-        align-self: start;
+    .redes_lista{
+        line-height: 20px;
     }
 
     .redes_img{
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 }
 
-
 .contenedor{
-    margin: 0 auto;
     background-color: var(--tercero);
-    padding: 10px 0;
-    margin-bottom: 100px;
-}
-.contenedor_1{
+    padding: 20px 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    margin: 0 auto 50px;
 }
 
 .texto{
-    width: 30%;
+    margin: auto;
+    width: 80%;
+}
+
+.contenedor_1{
+    margin: 0 300px;
 }
 
 .contenedor_2{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
-
+    margin: auto;
+    width: 60%;
+    height: 350px;
+    margin-bottom: 20px;
 }
 
 .imagenes{
-    height: 300px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     border: var(--tercero) solid 2px;
 }
@@ -392,84 +329,10 @@ iframe{
     border: var(--tercero) solid 2px;
 }
 
-
-@media (max-width:768px) {
-    .contenedor{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-bottom: 50px;
-    }
-
-    .contenedor_1{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-        height: 450px;
-        margin-bottom: 20px;
-    }
-
-    .contenedor_2{
-        width: 300px;
-        height: 260px;
-    }
-
-    .texto{
-        width: 90%;
-    }
-
-    .imagenes{
-        height: 200px;
-        width: 300px;
-    }
-    
-}
-
-/** Media Querry 390px **/
-
-@media (max-width:390px) {
-    
-    .navegacion{
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .ref{
-        background-color: var(--tercero);
-        width:80%;
-        text-align: center;
-    }
-
-    .presentacion{
-        width: 300px;
-        height: 170px;
-    }
-
-    .contenedor{
-        padding: 0;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedor_1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .contenedor_2{
-        width: 100%;
-        height: 100%;
-    }
-
-}
-
 .formulario {
     background-color: var(--tercero);
-    margin: 40px 400px;
+    margin: 50px 200px;
     padding: 20px 30px;
-    border-radius: 20px;
 }
 
 .formulario fieldset { 
@@ -493,6 +356,75 @@ iframe{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 20px;
+
+}
+
+@media (max-width:768px) {
+    .contenedor_1{
+    margin: 0 2%;
+    }
+
+    .texto{
+        width: 100%;
+    }
+    
+    .formulario {
+        margin: 50px 0;
+    }
+}
+
+/** Media Querry 390px **/
+
+@media (max-width:390px) {
+
+    h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .navegacion{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ref{
+        background-color: var(--tercero);
+        width:80%;
+        text-align: center;
+    }
+
+    .presentacion{
+        width: 300px;
+        height: 170px;
+    }
+
+    .contenedor{
+        padding: 20px 0;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-items: end;
+    }
+    .contenedor_2 h2{
+        margin-bottom: 10px; 
+    }
+
+    .contenedor_1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contenedor_2{
+        width: 90%;
+        height: 200px;
+    }
+
+    .contenedor_2 h2{
+        width: 100%;
+        height: 100%;
+    }
 
 }
 
