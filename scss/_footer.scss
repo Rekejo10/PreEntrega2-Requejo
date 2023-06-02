@@ -1,0 +1,50 @@
+.pie{
+    background-color: $color-secundario;
+    padding-top: 20px;
+    color: white;
+    h3{
+        color:$color-tercero;
+    }
+    .redes_1{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .horario{
+        text-align: center;
+    }
+    
+    .redes_lista{
+        line-height: 33px;
+    }
+
+    iframe{
+        width: 400px;
+        height: 200px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+}
+
+/** Media Querry Footer**/
+
+@media (max-width:768px) {
+
+    footer{
+        font-size: 10px;
+
+        iframe{
+            width: 150px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .redes_lista{
+            line-height: 20px;
+        }
+    
+        .redes_img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
