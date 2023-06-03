@@ -1,3 +1,9 @@
+.redes_img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
 .intro{
     margin: 0 200px 60px;
     text-align: center;
@@ -21,10 +27,10 @@
         justify-items: start;
         align-items: center;
         grid-area:video;
-        width: 490px; 
+        width: 200px; 
         height: 280px;
         border-radius: 10px;
-        border: var(--tercero) solid 2px;
+        border: $color-tercero solid 2px;
     }
 }
 
@@ -176,6 +182,10 @@
             text-transform: uppercase;
             text-align: center;
             border: $color-primario solid 2px;
+
+            :hover{
+                cursor: pointer;
+            }
         }
     }
 }
